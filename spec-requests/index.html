@@ -1,0 +1,352 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./style.css">
+    <title>Document</title>
+</head>
+
+<modal-window class="new-spec-request-modal-window">
+    <container class="modal-window__container">
+        <div class="close"></div>
+        <div class="modal-window__header">
+            <span class="modal-window__title">Новый спец запрос</span>
+            <span class="new-request__price">
+                <span class="price__text">Общая цена: </span>
+                <span class="price__tl">TL 0</span>
+
+                <span class="separator">|</span>
+
+                <span class="card__dollar-sign">$</span>
+                <span class="price__dollars">0</span>
+
+                <span class="separator">|</span>
+
+                <span class="card__euro-sign">€</span>
+                <span class="price__euro">0</span>
+            </span>
+        </div>
+        <div class="permission">
+            <span>Даю согласие на вскрытие упаковочной коробки товара</span>
+            <input name="permission" type="checkbox">
+        </div>
+        <container class="form__container visible">
+            <div class="choose-package">
+                <button class="choose-package-button">Выбрать посылку</button>
+            </div>
+                <div class="package-actions">
+                <button class="package-action__button package-action__button-whole-package">весь товар</button>
+                <button class="package-action__button package-action__button-choose-products">выбрать товар</button>
+            </div>
+        </container>
+
+        <ul class="form__package-list">
+            <li>
+                <button class="action-button" >Посылка №666</button>
+            </li>
+            <li>
+                <button class="action-button" >Посылка №777</button>
+            </li>
+            <li>
+                <button class="action-button" >Посылка №888</button>
+            </li>
+        </ul>
+
+        <ul class="whole-package__actions-list action__list">
+            <li class="select__action">
+                <span>Сделать общее фото разложенных по одному товаров</span>
+            </li>
+            <li class="select__action">
+                <span>Сделать 1 индивидуальное фото каждого товара</span>
+            </li>
+            <li class="select__action">
+                <span>Сделать фото каждого товара со всех сторон</span>
+            </li>
+            <li class="select__action">
+                <span>общее видео разложенных товаров</span>
+            </li>
+            <li class="select__action">
+                <span>Видео выбранного товара (кругом)</span>
+            </li>
+            <li class="select__action">
+                <span>вернуть все товары в магазин</span>
+            </li>
+            <li class="select__action">
+                <span>удалить упаковочные коробки со всех пар обуви</span>
+            </li>
+            <button class="select__action-submit">Отправить запрос</button>
+
+        </ul>
+        <div class="product__actions">
+            <ul class="product__list">
+                <li class="product__list-item">
+                    <a href="http://product.com" class="product__link">Товар 1234</a>
+                    <input type="checkbox">
+                </li>
+                <li class="product__list-item">
+                    <a href="http://product.com" class="product__link">Товар 5432</a>
+                    <input type="checkbox">
+                </li>
+                <li class="product__list-item">
+                    <a href="http://product.com" class="product__link">Товар 7643</a>
+                    <input type="checkbox">
+                </li>
+            </ul>
+            <ul class="product__action-list action__list">
+                <li class="select__action">
+                    <span>Измерить обувь см (ширина длина, подъем)</span>
+                </li>
+                <li class="select__action">
+                    <span>Измерить объем одежды см (грудь, пояс, бедра)</span>
+                </li>
+                <li class="select__action">
+                    <span>Измерить объемные товары см</span>
+                </li>
+                <li class="select__action">
+                    <span>Фото выбранного товара (4 стороны)</span>
+                </li>
+                <li class="select__action">
+                    <span>Видео выбранного товара (кругом)</span>
+                </li>
+                <li class="select__action">
+                    <span>Упаковать отдельно( хрупкие и товары необычной формы)</span>
+                </li>
+                <li class="select__action">
+                    <span>Удалить упаковочную коробку с обуви</span>
+                </li>
+            </ul>
+            <button class="select__action-submit">Отправить запрос</button>
+
+        </div>
+
+    </container>
+</modal-window>
+
+<body class="">
+    <wrapper class="wrapper">
+        <main>
+            <container class="main__container">
+                <section class="new-spec-request-button">
+                    <container class="new-spec-request-button__container">
+                        <span class="cross"></span>
+                        <span class="new-spec-request-button__text">Создать новый спец запрос</span>
+                    </container>
+                </section>
+                <section class="cards">
+                    <ul class="card__list">
+                        <li class="card__item">
+                            <card class="card">
+                                <div class="card__header">
+                                    <article class="card__header-left card__header-article">
+                                        <div class="card__id"> Спец услуга №4453
+                                        </div>
+                                        <a class="card__package-link"
+                                            href="https://https://eshopstr.com/ru/client/depo">
+                                            Посылка №4619
+                                        </a>
+                                    </article>
+
+                                    <article class="card__header-right card__header-article">
+                                        <div class="card__price">
+                                            <span class="price__text">Цена</span>
+                                            <span class="price__tl">TL 0</span>
+
+                                            <span class="card__dollar-sign">$</span>
+                                            <span class="price__dollars">0</span>
+
+                                            <span class="euro-dollar__separator">|</span>
+
+                                            <span class="card__euro-sign">€</span>
+                                            <span class="price__euro">0</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <main class="card__main">
+                                    <ul class="card__product-list">
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 1</span>
+                                        </li>
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 2</span>
+                                        </li>
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 3</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="spec-requests__list">
+                                        <li class="spec-requests__item">
+                                            <div class="spec-request">
+                                                <span class="spec-request__name">измерить обувь см (ширина длина,
+                                                    подъем)</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </main>
+                            </card>
+                        </li>
+                        <li class="card__item">
+                            <card class="card">
+                                <div class="card__header">
+                                    <article class="card__header-left card__header-article">
+                                        <div class="card__id"> Спец услуга №4453
+                                        </div>
+                                        <a class="card__package-link"
+                                            href="https://https://eshopstr.com/ru/client/depo">
+                                            Посылка №4619
+                                        </a>
+                                    </article>
+
+                                    <article class="card__header-right card__header-article">
+                                        <div class="card__price">
+                                            <span class="price__text">Цена</span>
+                                            <span class="price__tl">TL 0</span>
+
+                                            <span class="card__dollar-sign">$</span>
+                                            <span class="price__dollars">0</span>
+
+                                            <span class="euro-dollar__separator">|</span>
+
+                                            <span class="card__euro-sign">€</span>
+                                            <span class="price__euro">0</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <main class="card__main">
+                                    <ul class="card__product-list">
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 1</span>
+                                        </li>
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 2</span>
+                                        </li>
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 3</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="spec-requests__list">
+                                        <li class="spec-requests__item">
+                                            <div class="spec-request">
+                                                <span class="spec-request__name">измерить обувь см (ширина длина,
+                                                    подъем)</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </main>
+                            </card>
+                        </li>
+                        <li class="card__item">
+                            <card class="card">
+                                <div class="card__header">
+                                    <article class="card__header-left card__header-article">
+                                        <div class="card__id"> Спец услуга №4453
+                                        </div>
+                                        <a class="card__package-link"
+                                            href="https://https://eshopstr.com/ru/client/depo">
+                                            Посылка №4619
+                                        </a>
+                                    </article>
+
+                                    <article class="card__header-right card__header-article">
+                                        <div class="card__price">
+                                            <span class="price__text">Цена</span>
+                                            <span class="price__tl">TL 0</span>
+
+                                            <span class="card__dollar-sign">$</span>
+                                            <span class="price__dollars">0</span>
+
+                                            <span class="euro-dollar__separator">|</span>
+
+                                            <span class="card__euro-sign">€</span>
+                                            <span class="price__euro">0</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <main class="card__main">
+                                    <ul class="card__product-list">
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 1</span>
+                                        </li>
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 2</span>
+                                        </li>
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 3</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="spec-requests__list">
+                                        <li class="spec-requests__item">
+                                            <div class="spec-request">
+                                                <span class="spec-request__name">измерить обувь см (ширина длина,
+                                                    подъем)</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </main>
+                            </card>
+                        </li>
+                        <li class="card__item">
+                            <card class="card">
+                                <div class="card__header">
+                                    <article class="card__header-left card__header-article">
+                                        <div class="card__id"> Спец услуга №4453
+                                        </div>
+                                        <a class="card__package-link"
+                                            href="https://https://eshopstr.com/ru/client/depo">
+                                            Посылка №4619
+                                        </a>
+                                    </article>
+
+                                    <article class="card__header-right card__header-article">
+                                        <div class="card__price">
+                                            <span class="price__text">Цена</span>
+                                            <span class="price__tl">TL 0</span>
+
+                                            <span class="card__dollar-sign">$</span>
+                                            <span class="price__dollars">0</span>
+
+                                            <span class="euro-dollar__separator">|</span>
+
+                                            <span class="card__euro-sign">€</span>
+                                            <span class="price__euro">0</span>
+                                        </div>
+                                    </article>
+                                </div>
+                                <main class="card__main">
+                                    <ul class="card__product-list">
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 1</span>
+                                        </li>
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 2</span>
+                                        </li>
+                                        <li class="card__product-item">
+                                            <span class="product">Товар 3</span>
+                                        </li>
+                                    </ul>
+                                    <ul class="spec-requests__list">
+                                        <li class="spec-requests__item">
+                                            <div class="spec-request">
+                                                <span class="spec-request__name">измерить обувь см (ширина длина,
+                                                    подъем)</span>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </main>
+                            </card>
+                        </li>
+                    </ul>
+                </section>
+            </container>
+        </main>
+    </wrapper>
+    <script src="./new-spec-request-script.js"></script>
+    <script src="./form-script.js"></script>
+    <script src="./card-animation.js"></script>
+    <script src="./action-click-event.js"></script>
+</body>
+
+
+</html>
