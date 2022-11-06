@@ -355,7 +355,9 @@ container{
     padding: 10px 5px;
     background-color: rgb(238, 62, 62);
     color: white;
-    display: block;
+    display: grid;
+    align-items: center;
+    grid-template-columns: 7.5fr 1.5fr 1fr;
     border-radius: 5px;
     cursor: pointer;
     transition: all .3s;
@@ -379,6 +381,11 @@ container{
     display: block;
     max-width: 80%;
 }
+
+.action__price {
+    display: flex;
+}
+
 .select__action-submit {
     display: block;
     margin-top: 5px;
