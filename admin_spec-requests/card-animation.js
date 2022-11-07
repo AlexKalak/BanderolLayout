@@ -1,6 +1,12 @@
-const body = document.querySelector('body');
-body.addEventListener('click', (event) => {
-    if(event.target.closest('card') && event.target.closest('card').querySelector('main')){
-        event.target.closest('card').querySelector('main').classList.toggle('opened')
+$('.card__header').click(function() {
+    let main = $(this).siblings('main');
+    main.stop()
+    if(main.attr('opened') === "true"){
+        main.slideUp(400);
+        main.attr('opened', "false")
+    }
+    else {
+        main.slideDown(400);
+        main.attr('opened', "true")
     }
 })

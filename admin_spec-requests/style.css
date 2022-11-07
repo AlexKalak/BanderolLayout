@@ -9,7 +9,6 @@ ul, li {
 }
 
 .card {
-    cursor: pointer;
 }
 
 .card__list {
@@ -19,6 +18,7 @@ ul, li {
 }
 
 .card__header {
+    cursor: pointer;
     padding: 15px;
     display: flex;
     gap: 100px;
@@ -43,17 +43,24 @@ ul, li {
     font-size: 20px;
 }
 .card__date span:first-child {
-    color:rgb(216, 104, 0);
+    color:rgb(204, 75, 0);
 }
 .card__date span {
     color:green;
 }
 
 .card__indicator {
-    padding: 3px;
-    border: 5px solid rgb(20, 170, 20);
+    color: white;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+.card__indicator.done {
     background-color: rgb(20, 170, 20);
-    border-radius: 20px;
+}
+
+.card__indicator.not-done {
+    background-color: rgb(204, 75, 0);
 }
 
 .card__id {
@@ -74,15 +81,6 @@ ul, li {
     flex-direction: column-reverse;
 }
 
-.card__main {
-    max-height: 0;
-    transition: max-height 0.5s;
-    overflow: hidden;
-}
-
-.card__main.opened {
-    max-height: 500px;
-}
 .card__product-list{
     padding: 20px;
     border: 1px solid rgb(207, 199, 199);
@@ -109,4 +107,88 @@ ul, li {
 .media {
     padding: 20px;
     border: 1px solid rgb(207, 199, 199);
+    align-items: center;
+}
+
+.media label {
+    display: flex;
+    align-items: center;
+    width: fit-content;
+    padding:3px;
+    border-radius: 2px;
+    gap: 5px;
+    background-color: rgb(146, 148, 150);
+    cursor: pointer;
+    margin: 10px;
+}
+
+.media__img {
+    display: block;
+    width: 32px;
+    height: 32px;
+}
+
+.media__text {
+    font-size: 20px;
+    height: fit-content;
+    font-weight: bold;
+}
+
+.file-input {
+    display: none;
+}
+
+.photos {
+    display: flex;
+    flex-wrap: wrap;
+    gap:5px;
+}
+
+.photo-block {
+    position: relative;
+    height: 100px;
+    width: fit-content;
+    cursor: pointer;
+}
+
+.photo__image {
+    max-height: 100px;
+}
+
+.close {
+    position: absolute;
+    top: 0;
+    right: 0;
+    cursor: pointer;
+    height: 30px;
+    width: 30px;
+    background-color: #000;
+    border-radius: 50%;
+}
+
+.close::after {
+    content: '';
+    top: 0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    position: absolute;
+    height: 2px;
+    width: 25px;
+    transform: rotate(45deg);
+    background-color: #fff;
+}
+.close::before {
+    content: '';
+    top: 0;
+    left:0;
+    bottom:0;
+    right:0;
+    margin:auto;
+    position: absolute;
+    height: 2px;
+    width: 25px;
+    transform: rotate(-45deg);
+    background-color: #fff;
 }

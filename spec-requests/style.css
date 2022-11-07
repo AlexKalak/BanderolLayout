@@ -92,7 +92,14 @@ container{
     align-items: center;
     justify-content: space-between;
     border: 1px solid rgb(207, 199, 199);
+    border-radius: 10px;
 }
+
+.card__header.opened {
+    border-bottom-left-radius: 0;
+    border-bottom-right-radius: 0;
+}
+
 .card__header-left {
     display: flex;
     align-items: center;
@@ -105,7 +112,8 @@ container{
     color: rgb(20, 170, 20);
     display: block;
     position: relative;
-    max-width: 120px;
+    width: fit-content;
+    max-width: 100px;
 }
 
 .card__package-link {
@@ -120,8 +128,13 @@ container{
 
 .card__main {
     max-height: 0;
-    transition: max-height 0.5s;
+    transition: all 0.5s;
     overflow: hidden;
+}
+
+.card__main.opened .spec-requests__list {
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
 }
 
 .card__main.opened {
@@ -519,6 +532,9 @@ container{
 }
 
 @media (max-width: 480px) {
+    .card__list {
+        gap: 15px;
+    }
     .card__header {
         padding: 5px;
     }

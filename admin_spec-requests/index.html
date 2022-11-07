@@ -2,80 +2,181 @@
 
 <head>
     <link rel="stylesheet" href="./style.css">
+    <script
+        src="https://code.jquery.com/jquery-3.6.1.min.js"
+        integrity="sha256-o88AwQnZB+VDvE9tvIXrMQaPlFFSUTR+nldQm1LuPXQ="
+        crossorigin="anonymous">
+    </script>
+		
 </head>
 
 <body>
-    <header>
-        <section class="cards">
-            <ul class="card__list">
-                <li class="card__item">
-                    <card class="card">
-                        <header class="card__header">
-                            <article class="card__header-left card__header-article">
-                                <div class="left">
-                                    <div class="card__id"> Спец услуга №4453</div>
-                                    <div class="card__price">
-                                        <span class="price__text">Цена</span>
-                                        <span class="price__tl">TL 0</span>
-    
-                                        <span class="card__dollar-sign">$</span>
-                                        <span class="price__dollars">0</span>
-    
-                                        <span class="euro-dollar__separator">|</span>
-    
-                                        <span class="card__euro-sign">€</span>
-                                        <span class="price__euro">0</span>
-                                    </div>
-                                </div>
-                                <a class="card__package-link" href="https://https://eshopstr.com/ru/client/depo">
-                                    Посылка №4619
-                                </a>
-                            </article>
+    <section class="cards">
+        <ul class="card__list">
+            <li class="card__item">
+                <card class="card">
+                    <header class="card__header">
+                        <article class="card__header-left card__header-article">
+                            <div class="left">
+                                <div class="card__id"> Спец услуга №4453</div>
+                                <div class="card__price">
+                                    <span class="price__text">Цена</span>
+                                    <span class="price__tl">TL 0</span>
 
-                            <article class="card__header-right card__header-article">
-                                <div class="left">
-                                    <div class="card__customer">
-                                        <span class="customer-name">Vasya Pupkin</span>
-                                    </div>
-                                    <div class="card__date">
-                                        <span>10.11.2022</span>/<span>10:28</span>
-                                    </div>
+                                    <span class="aeparator">|</span>
+
+                                    <span class="card__dollar-sign">$</span>
+                                    <span class="price__dollars">0</span>
+
+                                    <span class="separator">|</span>
+
+                                    <span class="card__euro-sign">€</span>
+                                    <span class="price__euro">0</span>
                                 </div>
-                                <div class="card__indicator">
-                                    Выполнен
-                                </div>
-                            </article>
-                        </header>
-                        <main class="card__main">
-                            <ul class="card__product-list">
-                                <li class="card__product-item">
-                                    <span class="product">Товар 1</span>
-                                </li>
-                                <li class="card__product-item">
-                                    <span class="product">Товар 2</span>
-                                </li>
-                                <li class="card__product-item">
-                                    <span class="product">Товар 3</span>
-                                </li>
-                            </ul>
-                            <ul class="spec-requests__list">
-                                <li class="spec-requests__item">
-                                    <div class="spec-request">
-                                        <span class="spec-request__action">измерить обувь см (ширина длина,
-                                            подъем)</span>
-                                    </div>
-                                </li>
-                            </ul>
-                            <div class="media">
-                                <input type="file">
                             </div>
-                        </main>
-                    </card>
-                </li>
-            </ul>
-        </section>
-    </header>
+                            <a class="card__package-link" href="https://https://eshopstr.com/ru/client/depo">
+                                Посылка №4619
+                            </a>
+                        </article>
+
+                        <article class="card__header-right card__header-article">
+                            <div class="left">
+                                <div class="card__customer">
+                                    <span class="customer-name">Vasya Pupkin</span>
+                                </div>
+                                <div class="card__date">
+                                    <span>10.11.2022</span>/<span>10:28</span>
+                                </div>
+                            </div>
+                            <div class="card__indicator not-done">
+                                Не Выполнен
+                            </div>
+                        </article>
+                    </header>
+                    <main class="card__main" opened="false" style="display: none">
+                        <ul class="card__product-list">
+                            <li class="card__product-item">
+                                <span class="product">Товар 1</span>
+                            </li>
+                            <li class="card__product-item">
+                                <span class="product">Товар 2</span>
+                            </li>
+                            <li class="card__product-item">
+                                <span class="product">Товар 3</span>
+                            </li>
+                        </ul>
+                        <ul class="spec-requests__list">
+                            <li class="spec-requests__item">
+                                <div class="spec-request">
+                                    <span class="spec-request__action">измерить обувь см (ширина длина,
+                                        подъем)</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="media">
+                            <label>
+                                <img src="./img/photo-camera.png" class="media__img" />
+                                <span class="media__text">Добавить фото</span>
+                                <input type="file" class="file-input">
+                            </label>
+                            <div class="photos">
+
+                            </div>
+                        </div>
+                    </main>
+                </card>
+            </li>
+            <li class="card__item">
+                <card class="card">
+                    <header class="card__header">
+                        <article class="card__header-left card__header-article">
+                            <div class="left">
+                                <div class="card__id"> Спец услуга №4453</div>
+                                <div class="card__price">
+                                    <span class="price__text">Цена</span>
+                                    <span class="price__tl">TL 0</span>
+
+                                    <span class="card__dollar-sign">$</span>
+                                    <span class="price__dollars">0</span>
+
+                                    <span class="euro-dollar__separator">|</span>
+
+                                    <span class="card__euro-sign">€</span>
+                                    <span class="price__euro">0</span>
+                                </div>
+                            </div>
+                            <a class="card__package-link" href="https://https://eshopstr.com/ru/client/depo">
+                                Посылка №4619
+                            </a>
+                        </article>
+
+                        <article class="card__header-right card__header-article">
+                            <div class="left">
+                                <div class="card__customer">
+                                    <span class="customer-name">Vasya Pupkin</span>
+                                </div>
+                                <div class="card__date">
+                                    <span>10.11.2022</span>/<span>10:28</span>
+                                </div>
+                            </div>
+                            <div class="card__indicator done">
+                                Выполнен
+                            </div>
+                        </article>
+                    </header>
+                    <main class="card__main" opened="false" style="display: none">
+                        <ul class="card__product-list">
+                            <li class="card__product-item">
+                                <span class="product">Товар 1</span>
+                            </li>
+                            <li class="card__product-item">
+                                <span class="product">Товар 2</span>
+                            </li>
+                            <li class="card__product-item">
+                                <span class="product">Товар 3</span>
+                            </li>
+                        </ul>
+                        <ul class="spec-requests__list">
+                            <li class="spec-requests__item">
+                                <div class="spec-request">
+                                    <span class="spec-request__action">измерить обувь см (ширина длина,подъем)</span>
+                                </div>
+                            </li>
+                        </ul>
+                        <div class="media">
+                            <div class="photos photos-old">
+                                <div class="photo-block photo-block-old">
+                                    <img src="file:///C:/Users/SANYA/Desktop/screen.png" class="photo__image-old photo__image"/>
+                                    <div class="close" style="display:none"></div> 
+                                </div>
+                                <div class="photo-block photo-block-old">
+                                    <img src="file:///C:/Users/SANYA/Desktop/screen2.png" class="photo__image-old photo__image"/>
+                                    <div class="close" style="display:none"></div> 
+                                </div>
+                                <div class="photo-block photo-block-old">
+                                    <img src="file:///C:/Users/SANYA/Desktop/screen2.png" class="photo__image-old photo__image"/>
+                                    <div class="close" style="display:none"></div> 
+                                </div>
+                            </div>
+                            <label>
+                                <img src="./img/photo-camera.png" class="media__img" />
+                                <span class="media__text">Добавить фото</span>
+                                <input type="file" class="file-input">
+                            </label>
+                            <div class="photos photos-new">
+                                <!-- <div class="photo-block-new photo-block">
+                                    <img src="file:///C:/Users/SANYA/Desktop/screen.png" class="photo__image photo__image-new"/>
+                                    <div class="close" style="display:none"></div> 
+                                </div> -->
+                            </div>
+                        </div>
+                    </main>
+                </card>
+            </li>
+        </ul>
+    </section>
     <script src="./card-animation.js"></script>
+    <script src="./photo-uploader.js"></script>
 </body>
 
 </html>
